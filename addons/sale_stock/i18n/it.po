@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* sale_stock
-# 
+#
 # Translators:
 # Cesare Cugnasco <cesare.cugnasco@gmail.com>, 2020
 # Simone Bernini <simone@aperturelabs.it>, 2020
@@ -10,7 +10,7 @@
 # Alessandro Fiorino <alessandro.fiorino@digitaldomus.it>, 2021
 # Friederike Fasterling-Nesselbosch, 2022
 # Sergio Zanchetta <primes2h@gmail.com>, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
@@ -98,13 +98,13 @@ msgstr "<strong>Ordini di consegna</strong>"
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<strong>Incoterm: </strong>"
-msgstr "<strong>Termine di resa: </strong>"
+msgstr "<strong>Incoterm: </strong>"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.report_invoice_document_inherit_sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.report_saleorder_document_inherit_sale_stock
 msgid "<strong>Incoterm:</strong>"
-msgstr "<strong>Termine di resa:</strong>"
+msgstr "<strong>Incoterm:</strong>"
 
 #. module: sale_stock
 #: model:ir.model.fields,help:sale_stock.field_sale_order_line__product_type
@@ -274,12 +274,12 @@ msgstr "Mostrare numero di serie/lotto nelle fatture"
 #. module: sale_stock
 #: model:res.groups,name:sale_stock.group_display_incoterm
 msgid "Display incoterms on Sales Order and related invoices"
-msgstr "Mostrare termini di resa su ordine di vendita e relative fatture"
+msgstr "Mostrare incoterms su ordine di vendita e relative fatture"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.res_config_settings_view_form_sale
 msgid "Display incoterms on orders &amp; invoices"
-msgstr "Visualizza termini di resa su ordini e fatture"
+msgstr "Visualizza incoterms su ordini e fatture"
 
 #. module: sale_stock
 #: code:addons/sale_stock/models/sale_order.py:0
@@ -401,13 +401,13 @@ msgstr "Trasferimenti coinvolti:"
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order__incoterm
 msgid "Incoterm"
-msgstr "Termine di resa"
+msgstr "Incoterm"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_res_config_settings__group_display_incoterm
 #: model_terms:ir.ui.view,arch_db:sale_stock.res_config_settings_view_form_sale
 msgid "Incoterms"
-msgstr "Termini di resa"
+msgstr "Incoterms"
 
 #. module: sale_stock
 #: model:ir.model.fields,help:sale_stock.field_sale_order__incoterm

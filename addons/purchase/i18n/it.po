@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* purchase
-# 
+#
 # Translators:
 # Francesco Garganese <francesco.garganese@aeromnia.aero>, 2020
 # Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2020
@@ -14,7 +14,7 @@
 # neveroils <maiolif@mgftools.com>, 2020
 # Léonie Bouchat <lbo@odoo.com>, 2020
 # Sergio Zanchetta <primes2h@gmail.com>, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
@@ -1318,7 +1318,7 @@ msgstr "Per eliminare un ordine di acquisto è necessario prima annullarlo."
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__incoterm_id
 msgid "Incoterm"
-msgstr "Termine di resa"
+msgstr "Incoterm"
 
 #. module: purchase
 #. openerp-web

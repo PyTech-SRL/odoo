@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* base
-# 
+#
 # Translators:
 # efraimbiffi <eab@odoo.com>, 2020
 # Pietro Della Notte <pdellanotte@gmail.com>, 2020
@@ -26,7 +26,7 @@
 # Friederike Fasterling-Nesselbosch, 2022
 # Marianna Ciofani, 2023
 # Sergio Zanchetta <primes2h@gmail.com>, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
@@ -4969,7 +4969,7 @@ msgstr ""
 "\n"
 "* Spedizione: scelta tra spedizione unica o parziale\n"
 "* Fatturazione: scelta di come verranno pagate le fatture\n"
-"* Termini di resa: condizioni commerciali internazionali (Incoterms)\n"
+"* Incoterms: condizioni commerciali internazionali\n"
 "\n"
 "\n"
 "Con questo modulo è possibile personalizzare con categorie, totali parziali o interruzioni di\n"
@@ -5007,7 +5007,7 @@ msgstr ""
 "-----------\n"
 "* Spedizione: scelta tra spedizione unica o parziale\n"
 "* Fatturazione: scelta di come verranno pagate le fatture\n"
-"* Termini di resa: condizioni commerciali internazionali (Incoterms)\n"
+"* Incoterms: condizioni commerciali internazionali\n"
 "\n"
 
 #. module: base
