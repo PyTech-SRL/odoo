@@ -384,6 +384,13 @@ msgid "Canceled operations"
 msgstr "Operazioni annullate"
 
 #. module: payment
+#. odoo-javascript
+#: code:addons/payment/static/src/js/payment_form_mixin.js:0
+#, python-format
+msgid "Cannot Complete the Order."
+msgstr "Impossibile completare l'ordine."
+
+#. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider__capture_manually
 msgid "Capture Amount Manually"
 msgstr "Registra importo manualmente"
@@ -2018,6 +2025,13 @@ msgstr "Impossibile trovare il pagamento, ma non c'è da preoccuparsi."
 #, python-format
 msgid "We are not able to process your payment."
 msgstr "Non siamo in grado di elaborare il tuo pagamento."
+
+#. module: payment
+#. odoo-javascript
+#: code:addons/payment/static/src/js/payment_form_mixin.js:0
+#, python-format
+msgid "Cannot Complete the Order."
+msgstr "Impossibile completare l'ordine."
 
 #. module: payment
 #. odoo-javascript

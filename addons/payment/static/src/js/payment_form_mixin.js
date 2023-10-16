@@ -357,8 +357,7 @@ odoo.define('payment.payment_form_mixin', require => {
             }).guardedCatch(error => {
                 error.event.preventDefault();
                 this._displayError(
-                    _t("Server Error"),
-                    _t("We are not able to process your payment."),
+                    _t("Cannot Complete the Order."),
                     error.message.data.message
                 );
             });
