@@ -206,8 +206,14 @@ var AbstractWebClient = Widget.extend(ServiceProviderMixin, KeyboardNavigationMi
                     });
                 }
             } else {
-                // ignore Chrome video internal error: https://crbug.com/809574
-                if (!error && message === 'ResizeObserver loop limit exceeded') {
+                // Backporting https://github.com/odoo/odoo/pull/79571
+                const errorsToIgnore = [
+                    // Ignore some unnecessary "ResizeObserver loop limit exceeded" error in Firefox.
+                    "ResizeObserver loop completed with undelivered notifications.",
+                    // ignore Chrome video internal error: https://crbug.com/809574
+                    "ResizeObserver loop limit exceeded"
+                ]
+                if (!error && errorsToIgnore.includes(message)) {
                     return;
                 }
                 var traceback = error ? error.stack : '';
