@@ -815,6 +815,24 @@ function makeActionManager(env) {
         return Promise.all([currentActionProm, closingProm]).then((r) => r[0]);
     }
 
+    /**
+     * Checks whether received Absolute URL is valid
+     * based on the protocol.
+     *
+     * @private
+     * @param {String} url
+     */
+    function _checkIsValidAbsoluteURL(url) {
+         let absoluteURL;
+         try {
+            absoluteURL = new URL(url);
+         } catch (error) {
+            console.log("Error is", error)
+            return false;
+         }
+         return absoluteURL.protocol === "anydesk:";
+    }
+
     // ---------------------------------------------------------------------------
     // ir.actions.act_url
     // ---------------------------------------------------------------------------
@@ -829,8 +847,23 @@ function makeActionManager(env) {
      */
     function _executeActURLAction(action, options) {
         let url = action.url;
-        if (url && !(url.startsWith("http") || url.startsWith("/"))) {
+        let isAbsoluteUrl = action.isAbsoluteUrl ? action.isAbsoluteUrl : false;
+
+        if(url && (!(isAbsoluteUrl)) && !(url.startsWith("http") || url.startsWith("/"))){
             url = "/" + url;
+        }
+        if(isAbsoluteUrl){
+            if (!_checkIsValidAbsoluteURL(url)) {
+                const msg = env._t(
+                    "A valid URL is required to open remote machine " +
+                    "Please check whether provided URL is valid"
+                );
+                env.services.notification.add(msg, {
+                    sticky: true,
+                    type: "danger",
+                });
+                return;
+            }
         }
         if (action.target === "self") {
             env.services.router.redirect(url);
