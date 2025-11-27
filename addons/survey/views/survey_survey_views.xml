@@ -119,7 +119,7 @@
                                     <field name="scoring_type" widget="radio" />
                                     <field name="scoring_success_min" attrs="{'invisible': [('scoring_type', '=', 'no_scoring')]}" />
                                     <label for="certification" attrs="{'invisible': [('scoring_type', '=', 'no_scoring')]}"/>
-                                    <div class="o_checkbox_optional_field">
+                                    <div class="o_checkbox_optional_field" name="certification">
                                         <field name="certification" attrs="{'invisible': [('scoring_type', '=', 'no_scoring')]}"/>
                                         <div attrs="{'invisible': [('certification', '=', False)]}" class="w-100">
                                             <field name="certification_report_layout" placeholder="Pick a Style..." class="w-50"/>
