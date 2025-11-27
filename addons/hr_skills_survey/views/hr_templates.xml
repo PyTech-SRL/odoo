@@ -11,6 +11,21 @@
                     domain="[('certification', '=', True)]"
                     attrs="{'invisible': [('display_type', '!=', 'certification')]}"/>
             </xpath>
+            <field name="employee_id" position="attributes">
+               <attribute name="invisible">0</attribute>
+            </field>
+            <field name="survey_id" position="attributes">
+                <attribute name="context">
+                    {'default_certification': True}
+                </attribute>
+            </field>
+            <xpath expr="//sheet" position="after">
+                <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" />
+                        <field name="activity_ids" widget="mail_activity" />
+                        <field name="message_ids" widget="mail_thread" />
+                </div>
+            </xpath>
         </field>
     </record>
 </odoo>

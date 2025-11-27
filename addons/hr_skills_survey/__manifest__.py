@@ -16,6 +16,11 @@ This module adds certification to resume for employees.
     'data': [
         'views/hr_templates.xml',
         'data/hr_resume_data.xml',
+        'views/hr_employee_certification_views.xml',
+        'views/survey_survey_views.xml',
+    ],
+    'demo': [
+        'demo/hr_resume_demo.xml',
     ],
     'auto_install': True,
     'assets': {
